@@ -65,8 +65,8 @@ def method(r,k,D,max_trials=10000, g=0):
     root_d = Integer(Mod(D, r).sqrt())
     u = Integer(Mod((t-2)*root_d.inverse_mod(r) ,r))
     q = 1
-    j = Integer(0)
-    i = Integer(0)
+    j = Integer()
+    i = Integer()
     count = 0
     while (count < max_trials):
            q = Integer( (t+i*r)**2 - D*(u + j*r)**2)

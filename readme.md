@@ -37,6 +37,12 @@ Installation
 To install, add the library to the SAGE\_PATH environment variable:
 
 	$ export SAGE_PATH="path/to/library/:$SAGE_PATH"
+
+Or install as python package:
+
+```bash
+sage -pip install -e path/to/library
+```
 	
 To import and use the library, write
 
